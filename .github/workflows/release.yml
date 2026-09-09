@@ -68,4 +68,4 @@ jobs:
           FLIGHTRADAR_MAPS_API_KEY: ${{ secrets.FLIGHTRADAR_MAPS_API_KEY }}
           NETMONSTER_MAPS_API_KEY: ${{ secrets.NETMONSTER_MAPS_API_KEY }}
           SHARED_MAPS_API_KEY: ${{ secrets.SHARED_MAPS_API_KEY }}
-        run: ./gradlew :patches:buildAndroid clean --no-daemon
+        run: ./gradlew clean :patches:buildAndroid --no-daemon
